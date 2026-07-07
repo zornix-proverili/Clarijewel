@@ -134,7 +134,7 @@ Clarijewel/
 ├── frontend/
 └── backend/
 ```
-
+---
 ---
 
 ## Development Notes
@@ -153,3 +153,4 @@ Clarijewel/
 - [ ] Admin dashboard
 
 </details>
+
