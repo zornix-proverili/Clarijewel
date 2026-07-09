@@ -1,15 +1,26 @@
+# OS関連
 .DS_Store
 Thumbs.db
 
+# 依存関係
 node_modules/
 vendor/
 
+# 環境変数
 .env
 .env.local
 
+# エディタ設定
 .vscode/
+.idea/
 
-storage/*.log
-storage/framework/cache/*
-storage/framework/sessions/*
-storage/framework/views/*
+# Laravel関連
+/backend/storage/*.log
+/backend/storage/framework/cache/*
+/backend/storage/framework/sessions/*
+/backend/storage/framework/views/*
+
+# Next.js関連
+/frontend/.next/
+/frontend/out/
+/frontend/build/
