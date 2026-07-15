@@ -1,26 +1,49 @@
-# OS関連
-.DS_Store
-Thumbs.db
+# ==========================================
+# .gitignore for Clarijewel (Laravel + Next.js)
+# ==========================================
 
-# 依存関係
-node_modules/
-vendor/
-
-# 環境変数
+# --- 1. 機密情報 (絶対公開禁止) ---
 .env
-.env.local
+.env.*.local
+*.pem
+*.key
 
-# エディタ設定
-.vscode/
-.idea/
+# --- 2. 依存関係 (自動生成されるため不要) ---
+**/node_modules/
+/vendor/
 
-# Laravel関連
+# --- 3. Laravel (バックエンド) 関連 ---
 /backend/storage/*.log
 /backend/storage/framework/cache/*
 /backend/storage/framework/sessions/*
 /backend/storage/framework/views/*
+!/backend/storage/.gitignore
+!/backend/storage/framework/.gitignore
+!/backend/storage/framework/cache/.gitignore
+!/backend/storage/framework/sessions/.gitignore
+!/backend/storage/framework/views/.gitignore
+!/backend/storage/logs/.gitignore
 
-# Next.js関連
+# --- 4. Next.js (フロントエンド) 関連 ---
+/.next/
+/out/
+/build/
 /frontend/.next/
 /frontend/out/
 /frontend/build/
+
+# --- 5. OS・エディタ・IDE関連 ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.history/
+
+# --- 6. データベース・デバッグ・その他 ---
+*.sql
+*.sqlite
+*.sqlite-journal
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
